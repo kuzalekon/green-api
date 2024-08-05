@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="http.client.js" defer></script>
+    <script type="text/javascript" src="api.client.js" defer></script>
+    <script type="text/javascript" src="index.js" defer></script>
+  </head>
+  <body>
+    <main class="w3-content">
+      <div class="w3-row-padding">
+        <section class="w3-third w3-padding">
+          <section id="creds-panel">
+            <p>
+              <input id="instanceInput" class="w3-input w3-border" type="text" placeholder="idInstance" value="" />
+            </p>
+            <p>
+              <input id="tokenInput" class="w3-input w3-border" type="text" placeholder="apiTokenInstance" value="" />
+            </p>
+          </section>
+          <br />
+          <section id="control-panel">
+            <p>
+              <button id="getSettingsButton" class="w3-input w3-green" disabled>getSettings</button>
+            </p>
+            <p>
+              <button id="getStateInstanceButton" class="w3-input w3-green" disabled>getStateInstance</button>
+            </p>
+            <br />
+            <p>
+              <input id="sendMessageChatIdInput" class="w3-input w3-border" type="text" placeholder="chatId" value="" disabled />
+            </p>
+            <p>
+              <textarea id="sendMessageContentInput" class="w3-input w3-border" placeholder="Message" rows="3" minlength="1" maxlength="20000" disabled></textarea>
+            </p>
+            <p>
+              <button id="sendMessageButton" class="w3-input w3-green" disabled>sendMessage</button>
+            </p>
+            <br />
+            <p>
+              <input id="sendFileChatIdInput" class="w3-input w3-border" type="text" placeholder="chatId" value="" disabled />
+            </p>
+            <p>
+              <input id="sendFileUrlInput" class="w3-input w3-border" placeholder="URL" rows="3" minlength="1" maxlength="2000" disabled />
+            </p>
+            <p>
+              <button id="sendFileButton" class="w3-input w3-green" disabled>sendFileByUrl</button>
+            </p>
+          </section>
+        </section>
+        <section class="w3-rest w3-padding">
+          <p>Ответ:</p>
+          <p>
+            <textarea id="resultOutput" class="w3-input w3-border" readonly rows="28"></textarea>
+          </p>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>
